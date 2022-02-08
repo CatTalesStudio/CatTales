@@ -1,48 +1,55 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  33%, 66% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+.title-text {
+  color: #222;
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vmin;
+  left: 33%;
+  position: absolute;
+  top: 37%;
+  transform: translate(-50%, -50%);
+  width: 90vmin;
+}
+.title-text > div {
+  height: 33%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.title-text > div div {
+  font-size: 8vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.title-text > div div span {
   display: block;
 }
-body {
-  line-height: 1;
+.title-text > div.text-top {
+  border-bottom: 0.75vmin solid #000;
+  top: 0;
 }
-ol, ul {
-  list-style: none;
+.title-text > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.75s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
 }
-blockquote, q {
-  quotes: none;
+.title-text > div.text-topdiv span:first-child {
+  color: #767676;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+
+.body-text {
+  color: #222;
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vmin;
+  left: 33%;
+  position: absolute;
+  top: 37%;
+  transform: translate(-50%, -10%);
+  width: 90vmin;
 }
