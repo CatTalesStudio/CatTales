@@ -1031,9 +1031,7 @@ a {
   }
 }
 .cid-t3aApGuFNI {
-  padding-top: 21rem;
-  padding-bottom: 16rem;
-  background-image: url("../../../assets/images/mbr-1.jpg");
+  background-image: url("../../../assets/images/background.png");
 }
 .cid-t3aApGuFNI .image-wrap img {
   width: 100%;
@@ -1476,6 +1474,9 @@ a {
     margin: auto;
     width: 100%;
   }
+}
+.cid-sFHoAfPmXB .mbr-section-title {
+  text-align: center;
 }
 .cid-sFHvmoQ5Jg {
   padding-top: 6rem;
