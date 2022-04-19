@@ -1031,7 +1031,9 @@ a {
   }
 }
 .cid-t3aApGuFNI {
-  background-image: url("../../../assets/images/background.png");
+  padding-top: 10rem;
+  padding-bottom: 0rem;
+  background-color: #d2fdff;
 }
 .cid-t3aApGuFNI .image-wrap img {
   width: 100%;
